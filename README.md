@@ -1,3 +1,26 @@
+# SuperMenMart ecommerce
+
+<img width="1366" height="2642" alt="Welcome-to-SuperMenMart" src="https://github.com/user-attachments/assets/baec0366-4f31-4972-9520-917a5146804d" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
