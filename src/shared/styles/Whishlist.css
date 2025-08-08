@@ -1,0 +1,156 @@
+/* Wishlist Main Container */
+.wishlist-container {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* Heading */
+.wishlist-container h2 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+/* Empty Wishlist Message */
+.empty {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+/* Grid Layout */
+.wishlist-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card Container */
+.wishlist-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 280px;
+  height: 450px;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.wishlist-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+}
+
+
+/* Product Title */
+.wishlist-card h3 {
+  margin: 1rem 0 0.3rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Product Price */
+.wishlist-card p {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Action Buttons */
+.wishlist-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.wishlist-buttons button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Move to Cart */
+.wishlist-buttons button:first-child {
+  background-image: linear-gradient(to right, #4a00e0, #09949bde);;
+  color: #fff;
+}
+
+.wishlist-buttons button:first-child:hover {
+ background: linear-gradient(to right,red,yellow);
+}
+
+/* Remove from Wishlist */
+.wishlist-buttons button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.wishlist-buttons button:last-child:hover {
+  background-color: #c82333;
+}
+
+
+
+/* dark theme */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+body.light {
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Optional: Customize component backgrounds */
+.card,
+.navbar,
+.footer,
+.product-section,
+.testimonials,
+.form-wrapper {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .wishlist-container ,
+body.dark .wishlist-container h2 ,
+body.dark .empty
+{
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
